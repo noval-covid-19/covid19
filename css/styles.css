@@ -1,0 +1,362 @@
+/* Variables */
+:root {
+    --blue: #151D41;
+    --red: #EB4559;
+    --green: #55C882;
+    --grey: #6C7083;
+    --yellow: #FFBC42;
+    --light-bg: hsl(227, 47%, 96%);
+}
+
+
+/* Global Styles  */
+.container-fluid {
+    padding: 3% 15%;
+}
+
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: var(--light-bg);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.virus-top-left {
+    position: absolute;
+    z-index: -1;
+    left: -10%;
+}
+
+.virus-right {
+    position: absolute;
+    right: 0;
+}
+
+/* rotation */
+    {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+/* navbar section */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--blue) !important;
+}
+
+.navbar-brand img {
+    padding-right: 10px;
+}
+
+.nav-item {
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: var(--red);
+    color: #fff !important;
+}
+
+.nav-link {
+    color: var(--blue) !important;
+    text-align: center;
+}
+
+/* Hero section */
+#hero {
+    margin: 0 auto;
+}
+
+.mini-virus-left {
+    position: absolute;
+    animation: rotation 10s infinite linear;
+}
+
+.mini-virus-middle {
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 25%;
+    animation: rotation 30s infinite linear;
+}
+
+.mini-virus-right {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    bottom: 25%;
+    animation: rotation 20s infinite linear;
+}
+
+.hero-heading {
+    font-size: 5rem;
+    color: var(--blue);
+    margin-top: 5%;
+}
+
+.hero-text {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: var(--grey);
+}
+
+.btn-danger {
+    background-color: var(--red);
+    border-color: var(--red);
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+/* Tracker Section */
+#tracker {
+    text-align: center;
+    background-color: #fff;
+}
+
+.tracker-card {
+    height: 200px;
+    margin: 20px;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+.tracker-overview {
+    color: var(--blue);
+}
+
+.tracker-numbers {
+    font-size: 4rem;
+}
+
+.tracker-text {
+    font-size: 2rem;
+    color: var(--grey)
+}
+
+.total-case,
+.today-case,
+.deaths,
+.today-deaths {
+    color: var(--red);
+}
+
+.recovered {
+    color: var(--green);
+}
+
+.active-cases {
+    color: var(--yellow);
+}
+
+hr {
+    width: 15%;
+
+}
+
+/* Symptoms Section */
+.sick-woman {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.symptoms-heading {
+    color: var(--blue);
+}
+
+.symptoms-text {
+    color: var(--grey);
+    font-family: sans-serif;
+    padding-right: 50%;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* News Section */
+#news {
+    text-align: center;
+    background-color: #fff;
+}
+
+.news-heading {
+    padding-top: 3%;
+    color: var(--blue) !important;
+}
+
+.news {
+    margin-bottom: 5%;
+}
+
+.news-title {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+.read-more {
+    color: var(--red) !important;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.read-more:hover {
+    text-decoration: none;
+    border: 1px solid;
+    background-color: var(--red);
+    color: #fff !important;
+}
+
+.news>span {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+/* footer section */
+#footer {
+    background-color: var(--blue);
+    position: relative;
+    text-align: center;
+    color: #fff !important;
+}
+
+.footer-brand {
+    font-size: 2rem;
+    display: block;
+    margin: 15%;
+    color: #fff;
+}
+
+.footer-brand>img {
+    margin-right: 5%
+}
+
+.footer-links {
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer-links>li>a {
+    color: #fff;
+    font-weight: lighter;
+}
+
+/* ========Media Queries============ */
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    img[alt="woman-doctor"] {
+        height: 80%
+    }
+
+}
+
+/* Media Queries for 991px below */
+@media screen and (max-width: 991px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .mini-virus-left {
+        height: 20%;
+    }
+
+
+    .btn-danger {
+        margin-bottom: 20%;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    #symptoms {
+        text-align: center;
+    }
+
+    .symptoms-text {
+        padding: 20px;
+    }
+
+    img[alt="woman-doctor"] {
+        display: none;
+    }
+
+    .sick-woman {
+        width: 100%;
+        margin-left: 0px;
+        ;
+    }
+
+    .news-heading {
+        padding: 10%;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+}
+
+/* Media Queries for 582px below */
+@media screen and (max-width: 582px) {
+    .navbar-brand {
+        font-size: .6rem;
+    }
+
+    .navbar-brand img {
+        padding-right: 0px;
+        width: 20%;
+    }
+
+    .navbar-toggler-icon {
+        width: .6em;
+        height: .6em;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+
+
+}
